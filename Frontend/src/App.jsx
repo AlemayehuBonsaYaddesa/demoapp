@@ -1,0 +1,15 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import AddEmployee from "./Pages/AddEmployee";
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/add-employee" element={<AddEmployee />} />
+    </Routes>
+  );
+}
+
+export default App;
